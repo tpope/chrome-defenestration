@@ -3,7 +3,7 @@
 
   "name": "Defenestration",
   "description": "Define custom keyboard shortcuts for window and tab operations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "background": {
      "persistent": false,
      "scripts": [ "background.js" ]
