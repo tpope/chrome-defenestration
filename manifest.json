@@ -21,10 +21,7 @@
   ],
   "commands": {
      "close-tab": {
-       "description": "Close Tab",
-       "suggested_key": {
-         "linux": "Alt+W"
-       }
+       "description": "Close Tab"
      },
      "close-window": {
        "description": "Close Window"
@@ -51,10 +48,7 @@
        "description": "Mute All Audible Tabs"
      },
      "new-tab": {
-       "description": "New Tab",
-       "suggested_key": {
-         "linux": "Alt+T"
-       }
+       "description": "New Tab"
      },
      "open-downloads": {
        "description": "Open Downloads"
@@ -96,16 +90,10 @@
        "description": "Full Screen"
      },
      "new-window": {
-       "description": "New Window",
-       "suggested_key": {
-         "linux": "Alt+N"
-       }
+       "description": "New Window"
      },
      "new-window-incognito": {
-       "description": "New Incognito Window",
-       "suggested_key": {
-         "linux": "Shift+Alt+N"
-       }
+       "description": "New Incognito Window"
      },
      "zoom-in": {
        "description": "Zoom In"
