@@ -69,6 +69,14 @@ chrome.commands.onCommand.addListener(function(command) {
           chrome.windows.update(win.id, {focused: true});
         });
       });
+    } else if (command === 'history-back') {
+      chrome.tabs.executeScript({
+        code: 'window.history.back();',
+      });
+    } else if (command === 'history-forward') {
+      chrome.tabs.executeScript({
+        code: 'window.history.forward();',
+      });
     } else if (command === 'new-tab') {
       newTab();
     } else if (command === 'open-downloads') {

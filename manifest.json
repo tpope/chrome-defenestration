@@ -17,7 +17,8 @@
     "run_at": "document_start"
   }],
   "permissions": [
-    "sessions"
+    "sessions",
+    "activeTab"
   ],
   "commands": {
      "close-tab": {
@@ -37,6 +38,12 @@
      },
      "focus-window-other": {
        "description": "Focus Other Window"
+     },
+     "history-back": {
+       "description": "Go Back"
+     },
+     "history-forward": {
+       "description": "Go Forward"
      },
      "mute-tab": {
        "description": "Mute/Unmute Tab"
