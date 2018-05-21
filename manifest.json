@@ -36,14 +36,14 @@
      "focus-tab-previous": {
        "description": "Focus Previous Tab"
      },
+     "focus-window-other": {
+       "description": "Focus Other Window"
+     },
      "history-back": {
        "description": "Go Back"
      },
      "history-forward": {
        "description": "Go Forward"
-     },
-     "focus-window-other": {
-       "description": "Focus Other Window"
      },
      "mute-tab": {
        "description": "Mute/Unmute Tab"
