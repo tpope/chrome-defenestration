@@ -130,6 +130,14 @@ chrome.commands.onCommand.addListener(function(command) {
       chrome.tabs.reload(null, {bypassCache: true})
     } else if (command === 'restore-tab') {
       chrome.sessions.restore(null);
+    } else if (command === 'history-back') {
+      chrome.tabs.executeScript({
+        code: 'window.history.back();',
+      });
+    } else if (command === 'history-forward') {
+      chrome.tabs.executeScript({
+        code: 'window.history.forward();',
+      });
     } else if (command === 'fullscreen') {
       chrome.windows.getCurrent({}, function(win) {
         if (win.state === "fullscreen" || win.state == "docked") {

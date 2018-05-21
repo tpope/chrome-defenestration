@@ -17,7 +17,8 @@
     "run_at": "document_start"
   }],
   "permissions": [
-    "sessions"
+    "sessions",
+    "activeTab"
   ],
   "commands": {
      "close-tab": {
@@ -34,6 +35,12 @@
      },
      "focus-tab-previous": {
        "description": "Focus Previous Tab"
+     },
+     "history-back": {
+       "description": "Go Back"
+     },
+     "history-forward": {
+       "description": "Go Forward"
      },
      "focus-window-other": {
        "description": "Focus Other Window"
