@@ -37,7 +37,7 @@ var tabByOffset = function(tab, offset, callback) {
 
 var zooms = [0.25, 0.333, 0.5, 0.666, 0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2, 2.5, 3, 4, 5];
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener(function(tab) {
   newTab({url: "chrome://extensions/configureCommands"});
 });
 
@@ -208,9 +208,6 @@ var getShortcuts = function(f) {
   });
 };
 
-var globalShortcuts = {};
-getShortcuts(function(s) { globalShortcuts = s; });
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  sendResponse(globalShortcuts);
+  getShortcuts(function(s) { sendResponse(s); });
 });
